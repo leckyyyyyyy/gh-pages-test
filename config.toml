@@ -1,0 +1,16 @@
+baseurl = "http://leckyyyyyyy.github.io/gh-pages-test/"
+languageCode = "ja"
+title = "leckyyyyyyy GitHub Pages Test"
+MetaDataFormat = "toml"
+theme = "hyde-x"
+
+[author]
+  name = "leckyyyyyyy"
+
+[params]
+  theme = "theme-base-0d"
+  highlight = "sunburst"
+
+  github = "https://github.com/leckyyyyyyy"
+  twitter = "https://twitter.com/leckyyyyyyy"
+
