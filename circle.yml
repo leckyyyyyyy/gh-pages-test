@@ -15,8 +15,8 @@ deployment:
   gh-pages:
     branch: master
     commands:
-      - git clone git@github.com:leckyyyyyyy/gh-pages-test.git public
+      - git clone -b gh-pages git@github.com:leckyyyyyyy/gh-pages-test.git public
       - hugo
       - cd public && git add .
-      - cd public && git commit -m "[ci skip] publish `date '+%Y/%m/%d %H:%M:%S'`"
+      - cd public && git commit -m "publish `date '+%Y/%m/%d %H:%M:%S'`"
       - cd public && git push origin gh-pages
