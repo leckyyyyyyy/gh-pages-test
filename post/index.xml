@@ -6,8 +6,32 @@
     <description>Recent content in Posts on leckyyyyyyy GitHub Pages Test</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 04 May 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2015 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://leckyyyyyyy.github.io/gh-pages-test/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ページ内でのソースコード表示</title>
+      <link>http://leckyyyyyyy.github.io/gh-pages-test/post/sourcecode-test/</link>
+      <pubDate>Tue, 05 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://leckyyyyyyy.github.io/gh-pages-test/post/sourcecode-test/</guid>
+      <description>&lt;p&gt;ページ内でソースコードを表示する方法&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;インライン表示のときは文字列をバッククォート &lt;code&gt;``&lt;/code&gt; で囲む&lt;br /&gt;
+&lt;code&gt;バッククォートで囲まれた文字列はこんな感じになります&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;複数行表示のときはバッククォート &lt;code&gt;``` ```&lt;/code&gt; で囲む&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;バッククォートで囲まれた
+複数行の文字列はこんな感じになります
+
+# comment
+echo &amp;quot;コメント&amp;quot;;
+echo &#39;コメント&#39;;
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>初投稿</title>
