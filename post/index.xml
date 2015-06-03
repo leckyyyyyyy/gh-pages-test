@@ -6,8 +6,37 @@
     <description>Recent content in Posts on leckyyyyyyy GitHub Pages Test</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 05 May 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2015 20:39:23 +0900</lastBuildDate>
     <atom:link href="http://leckyyyyyyy.github.io/gh-pages-test/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Pull request &#43; WIP ワークフロー</title>
+      <link>http://leckyyyyyyy.github.io/gh-pages-test/post/pull-request-workflow/</link>
+      <pubDate>Wed, 03 Jun 2015 20:39:23 +0900</pubDate>
+      
+      <guid>http://leckyyyyyyy.github.io/gh-pages-test/post/pull-request-workflow/</guid>
+      <description>&lt;p&gt;Pull request(以下 PR) ベースの開発のススメ&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;タスクを共有するために Issue を作成する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git checkout -b [ブランチ名]&lt;/code&gt; で作業用ブランチを作成する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git commit --allow-empty&lt;/code&gt; で PR 用の空コミットを作成する&lt;/li&gt;
+&lt;li&gt;作業用ブランチをリモートに Push する&lt;/li&gt;
+&lt;li&gt;ブラウザ上から Push したブランチの PR を作成する&lt;br /&gt;
+PR のタイトルの先頭には作業中を示す &lt;strong&gt;[WIP]&lt;/strong&gt; を付けます。&lt;/li&gt;
+&lt;li&gt;作業用ブランチでコミットする&lt;/li&gt;
+&lt;li&gt;リモートに Push する前にコミットを整理する
+&lt;code&gt;git rebase -i [派生元のブランチ名]&lt;/code&gt; 派生元のブランチ名が master なら &lt;code&gt;git rebase -i master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;リモートのブランチを上書きするので強制 Push&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;終了/解決/閉じる&lt;/strong&gt; ことができる Issue の番号を PR のコメントに記載する&lt;br /&gt;
+Pull request のブランチをマージすると Issue を自動的に close します。&lt;br /&gt;
+&lt;strong&gt;マージ先はデフォルトブランチのときだけ自動的に close されます。&lt;/strong&gt;&lt;br /&gt;
+Issue を close させることができるメッセージは &lt;a href=&#34;https://help.github.com/articles/closing-issues-via-commit-messages/#keywords-for-closing-issues&#34;&gt;ヘルプ&lt;/a&gt; に詳細が載っています。&lt;/li&gt;
+&lt;li&gt;マージの準備が整ったら、PR のタイトルから &lt;strong&gt;[WIP]&lt;/strong&gt; を削除して作業完了を示します。&lt;br /&gt;
+後はマージされるだけです。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>ページ内でのソースコード表示</title>

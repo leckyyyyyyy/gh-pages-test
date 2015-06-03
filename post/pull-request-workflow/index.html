@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title>leckyyyyyyy GitHub Pages Test &middot; leckyyyyyyy</title>
+  <title>Pull request &#43; WIP ワークフロー &middot; leckyyyyyyy</title>
 
   
   <link rel="stylesheet" href="http://leckyyyyyyy.github.io/gh-pages-test//css/poole.css">
@@ -26,10 +26,10 @@
   
   
   
-  <link href="http://leckyyyyyyy.github.io/gh-pages-test/index.xml" rel="alternate" type="application/rss+xml" title="leckyyyyyyy GitHub Pages Test &middot; leckyyyyyyy" />
+  
 
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Pull request と WIP を利用したワークフロー">
+  <meta name="keywords" content="Pull request,WIP">
   
 </head>
 <body class="theme-base-0d">
@@ -64,47 +64,40 @@
 
 
 <div class="content container">
-  <div class="posts">
+  <div class="post">
+    <h1>Pull request &#43; WIP ワークフロー</h1>
+    <span class="post-date">Jun 3, 2015 &middot; 1 minute read
+    
+    <br/>
     
     
-    <div class="post">
-      <h1 class="post-title">
-        <a href="http://leckyyyyyyy.github.io/gh-pages-test/post/pull-request-workflow/">Pull request &#43; WIP ワークフロー</a>
-      </h1>
-      <span class="post-date">Jun 3, 2015 &middot; 1 minute read
-      
-      <br/>
-      
-      
-      </span>
-      <p>Pull request と WIP を利用したワークフロー</p>
-      <a href="http://leckyyyyyyy.github.io/gh-pages-test/post/pull-request-workflow/">Read On &rarr;</a>
-    </div>
-    
-    <div class="post">
-      <h1 class="post-title">
-        <a href="http://leckyyyyyyy.github.io/gh-pages-test/post/sourcecode-test/">ページ内でのソースコード表示</a>
-      </h1>
-      <span class="post-date">May 5, 2015 &middot; 1 minute read
-      </span>
-      <p></p>
-      <a href="http://leckyyyyyyy.github.io/gh-pages-test/post/sourcecode-test/">Read On &rarr;</a>
-    </div>
-    
-    <div class="post">
-      <h1 class="post-title">
-        <a href="http://leckyyyyyyy.github.io/gh-pages-test/post/first/">初投稿</a>
-      </h1>
-      <span class="post-date">May 4, 2015 &middot; 1 minute read
-      </span>
-      <p></p>
-      <a href="http://leckyyyyyyy.github.io/gh-pages-test/post/first/">Read On &rarr;</a>
-    </div>
-    
-    
-    
+    </span>
+    <p>Pull request(以下 PR) ベースの開発のススメ</p>
+
+<ol>
+<li>タスクを共有するために Issue を作成する</li>
+<li><code>git checkout -b [ブランチ名]</code> で作業用ブランチを作成する</li>
+<li><code>git commit --allow-empty</code> で PR 用の空コミットを作成する</li>
+<li>作業用ブランチをリモートに Push する</li>
+<li>ブラウザ上から Push したブランチの PR を作成する<br />
+PR のタイトルの先頭には作業中を示す <strong>[WIP]</strong> を付けます。</li>
+<li>作業用ブランチでコミットする</li>
+<li>リモートに Push する前にコミットを整理する
+<code>git rebase -i [派生元のブランチ名]</code> 派生元のブランチ名が master なら <code>git rebase -i master</code></li>
+<li>リモートのブランチを上書きするので強制 Push</li>
+<li><strong>終了/解決/閉じる</strong> ことができる Issue の番号を PR のコメントに記載する<br />
+Pull request のブランチをマージすると Issue を自動的に close します。<br />
+<strong>マージ先はデフォルトブランチのときだけ自動的に close されます。</strong><br />
+Issue を close させることができるメッセージは <a href="https://help.github.com/articles/closing-issues-via-commit-messages/#keywords-for-closing-issues">ヘルプ</a> に詳細が載っています。</li>
+<li>マージの準備が整ったら、PR のタイトルから <strong>[WIP]</strong> を削除して作業完了を示します。<br />
+後はマージされるだけです。</li>
+</ol>
+
   </div>
+  
 </div>
+
+
 
 
 <script src="http://leckyyyyyyy.github.io/gh-pages-test//js/highlight.pack.js"></script>
